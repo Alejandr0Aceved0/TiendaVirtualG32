@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "car")//FUNCIONA COMO UN ALIAS PARA NO LLAMAR A LA TABLA COMO ClientModelo sino client
+@Table(name = "car")//FUNCIONA COMO UN ALIAS PARA NO LLAMAR A LA TABLA COMO CarModelo sino car
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -17,5 +17,5 @@ public class CarModelo {
     private int id;
     private String brand;
     private int model;
-    private String category_id;
+    private int category_id;
 }
